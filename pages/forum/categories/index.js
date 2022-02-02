@@ -1,11 +1,7 @@
-import Navbar from "@/components/Navbar";
-
-
 
 const Categories = () => {
   return (
     <>
-    <Navbar />
     <div className="container">
       <section className="section-title">
         <div className="px-2">

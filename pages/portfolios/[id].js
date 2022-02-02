@@ -5,10 +5,10 @@ const PortfolioDetails = () => {
   const router = useRouter();
   console.log('router', router);
   return (
-    <div>
+    <>
       <h1>Portfolio Details</h1>
       <h1>ID: {router?.query?.id}</h1>
-    </div>
+    </>
   )
 }
 

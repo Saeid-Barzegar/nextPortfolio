@@ -45,7 +45,7 @@ html {
 }
 
 #__next {
-  height: 100%;
+  min-height: 100vh;
 }
   
 // Modifiers START
@@ -185,6 +185,13 @@ html {
   }
 }
   
+.navbar-wrapper{
+  padding: 0 20px;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
 .navbar {
   // height: 60px;
   margin: 0 auto;
@@ -215,9 +222,17 @@ html {
     text-overflow: ellipsis;
   }
 }
+
+.full-height{
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
   
 .portfolio-app {
-  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-wrapper {

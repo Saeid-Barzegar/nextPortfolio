@@ -1,12 +1,8 @@
-import NavbarComponent from "../../../components/Navbar";
-
 
 const  Post = () => {
   return (
     <>
-    <NavbarComponent />
-    <div className="container">
-    <section className="section-title">
+      <section className="section-title">
         <div className="px-2">
           <div className="pt-5 pb-4">
             <h1>Specific Topic</h1>
@@ -134,7 +130,6 @@ const  Post = () => {
           </div>
         </div>
       </section>
-    </div>
     </>
   );
 }

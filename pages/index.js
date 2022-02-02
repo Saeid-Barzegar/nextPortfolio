@@ -2,10 +2,7 @@ import HeroComponent from "../components/Hero"
 import NavbarComponent from "../components/Navbar"
 
 const Home = () => (
-  <div className="portfolio-app">
-    <NavbarComponent />
-    <HeroComponent />
-    <div className="container">
+  <>
       {/* HOME PAGE STARTS */}
       <section className="section-title">
         <div className="px-2">
@@ -59,7 +56,6 @@ const Home = () => (
         </div>
       </section>
       <a href="" className="btn btn-main bg-blue ttu">See More Posts</a>
-    </div>
 
     {/* REPLIER STARTS */}
     {/* <div className='reply-controls is-open'> */}
@@ -102,13 +98,8 @@ const Home = () => (
     </div>
     {/* REPLIER ENDS */}
     {/* FOOTER STARTS */}
-    <footer id="sticky-footer" className="py-4 bg-black text-white-50 py-3">
-      <div className="container text-center">
-        <small>Copyright &copy; Your Website</small>
-      </div>
-    </footer>
     {/* FOOTER ENDS */}
-  </div>
+  </>
 )
 
 export default Home
