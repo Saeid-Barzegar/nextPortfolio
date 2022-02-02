@@ -1,29 +1,29 @@
-import { useRouter } from "next/router";
 import React from "react";
+import { useRouter } from "next/router";
 
-// const PortfolioDetails = () => {
-//   const router = useRouter();
-//   console.log('router', router);
-//   return (
-//     <div>
-//       <h1>Portfolio Details</h1>
-//       <h1>ID: {router?.query?.id}</h1>
-//     </div>
-//   )
-// }
-
-const PortfolioDetails = ({query}) => {
+const PortfolioDetails = () => {
+  const router = useRouter();
+  console.log('router', router);
   return (
     <div>
       <h1>Portfolio Details</h1>
-      <h1>ID: {query?.id}</h1>
+      <h1>ID: {router?.query?.id}</h1>
     </div>
   )
 }
 
-PortfolioDetails.getInitialProps = ({query}) => {
-  return {query};
-}
+// const PortfolioDetails = ({query}) => {
+//   return (
+//     <div>
+//       <h1>Portfolio Details</h1>
+//       <h1>ID: {query?.id}</h1>
+//     </div>
+//   )
+// }
+
+// PortfolioDetails.getInitialProps = ({query}) => {
+//   return {query};
+// }
 
 // class PortfolioDetails extends React.Component {
 
