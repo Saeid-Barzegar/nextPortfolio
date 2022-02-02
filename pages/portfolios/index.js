@@ -1,11 +1,21 @@
 
-const Portfolios = () => {
+const apicall = () => {
+  return new Promise((res, rej) => {
+    setTimeout(() => {
+      res('Just Some Testing Data')
+    }, 200);
+  })
+}
+const Portfolios = (props) => {
+  const { testingData } = props;
+  console.log('props', props);
   return (
     <>
       <section className="section-title">
         <div className="px-2">
           <div className="pt-5 pb-4">
             <h1>Portfolios</h1>
+            <h1>{testingData}</h1>
           </div>
         </div>
       </section>
@@ -51,6 +61,13 @@ const Portfolios = () => {
       </section>
     </>
   )
+}
+
+Portfolios.getInitialProps = async () => {
+  const data = await apicall();
+  return {
+    testingData: data
+  }
 }
 
 export default Portfolios;

@@ -21,15 +21,15 @@ const NavbarComponent = () => (
           <li className="nav-item mr-3">
             <NavLink path="/portfolios" label="Portfolio" />
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Forum
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
               <NavLink path="/categories" label="Categories" />
               <NavLink path="/topics" label="Topics" />
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <div className="dropdown-divider"></div>
+              <a className="dropdown-item" href="#">Something else here</a>
             </div>
           </li>
         </ul>

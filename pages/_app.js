@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import App from 'next/app';
 import HeroComponent from '../components/Hero';
 import NavbarComponent from '../components/Navbar';
 import "../styles/index.scss";
 
-const App = ({Component, pageProps}) => {
+const PortfolioApp = ({Component, pageProps}) => {
   console.log('Saeid', {Component, pageProps});
   return (
     <div className="portfolio-app">
@@ -21,4 +22,14 @@ const App = ({Component, pageProps}) => {
   )
 }
 
-export default App;
+PortfolioApp.getInitialProps = async (context) => {
+  const initialProps = App.getInitialProps && await App.getInitialProps(context);
+  return {
+    pageProps: {
+      ...initialProps.pageProps,
+      email: 'saeidbarzegar@gmail.com', // add initial props to all page props
+    }
+  }
+}
+
+export default PortfolioApp;
