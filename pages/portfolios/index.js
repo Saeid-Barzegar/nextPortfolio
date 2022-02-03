@@ -8,7 +8,6 @@ const apicall = () => {
 }
 const Portfolios = (props) => {
   const { testingData } = props;
-  console.log('props', props);
   return (
     <>
       <section className="section-title">
