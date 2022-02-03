@@ -5,7 +5,6 @@ import NavbarComponent from '../components/Navbar';
 import "../styles/index.scss";
 
 const PortfolioApp = ({Component, pageProps}) => {
-  console.log('Saeid', {Component, pageProps});
   return (
     <div className="portfolio-app">
       <NavbarComponent />

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 
 const PortfolioDetails = () => {
   const router = useRouter();
-  console.log('router', router);
   return (
     <>
       <h1>Portfolio Details</h1>

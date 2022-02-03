@@ -1,5 +1,4 @@
-import HeroComponent from "../components/Hero"
-import NavbarComponent from "../components/Navbar"
+
 
 const Home = () => (
   <>
