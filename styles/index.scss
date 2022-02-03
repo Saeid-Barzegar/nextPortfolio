@@ -186,7 +186,13 @@ html {
 }
   
 .navbar-wrapper{
-  padding: 0 20px;
+  width: 100% !important;
+  padding: 10px 20px;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
 }
 
 .cursor-pointer{
